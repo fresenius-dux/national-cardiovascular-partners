@@ -1,0 +1,46 @@
+/*!
+ * Theme Name: FMCNA Child
+ * Template: fmcna-com-parent
+ * Author: Peter Mumford 3235181
+ * Version: 0.1
+*/
+
+
+
+@import "../../fmcna-com-parent/css/variables";
+
+@import "../../fmcna-com-parent/css/scss/vendor/fontawesome/variables";
+
+@import "../../fmcna-com-parent/css/scss/vendor/fontawesome/mixins";
+
+@import "../../fmcna-com-parent/css/scss/vendor/bootstrap/mixins";
+
+@import "../../fmcna-com-parent/css/scss/call-to-action";
+
+@import "partials/ncp-bottom-nav";
+
+@import "partials/ncp-site-navigation";
+
+@import "partials/ncp-hero";
+
+@import "partials/ncp-value-prop";
+
+@import "partials/ncp-adcs";
+
+@import "partials/ncp-modal-banner";
+
+@import "partials/ncp-contact-form-banner";
+
+@import "partials/ncp-follow-links";
+
+@import "partials/ncp-social-share-links";
+
+@import "partials/ncp-header";
+
+@import "partials/ncp";
+
+@import "partials/ncp-contact";
+
+@import "partials/ncp-faq";
+
+@import "partials/sidebar";

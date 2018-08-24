@@ -1,0 +1,138 @@
+/*--------------------------------------------------------------
+# Bottom Nav style for Parter pages
+--------------------------------------------------------------*/
+
+.right-bar{
+    float: left;
+    display: block;
+    background: #F5F5F5;
+    width:30%;
+
+    &-inner-wrapper{
+        padding: 4em 2em 0;
+        h3{
+            color: #13275A;
+            margin-bottom: 0.5em;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+         li{
+             &:first-child{
+                 padding-top: 0;
+             }
+             padding: 0.75em 0;
+         }
+        }
+        span{
+            display: block;
+            margin: 2em 0;
+        }
+    }
+
+}
+
+
+.partner-bottom-nav{
+    &-header-wrapper{
+        margin: 0 auto;
+        text-transform: uppercase;
+        text-align: center;
+        &:after {
+          content: '';
+          display: block;
+          width: 150px;
+          height: 2px;
+          margin: 20px auto;
+          background-color: #003D99;
+        }
+        .partner-bottom-nav-snip{
+        }
+    }
+
+    .partner-bottom-nav-element-inner-wrapper {
+      padding: 20px;
+      .icon {
+        text-align: center;
+      }
+      h4 {
+        text-align: center;
+      }
+    }
+    &-title{
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &-snip{
+      font-size:18px;
+      line-height:22px;
+      text-align: center;
+      margin: 0 auto;
+      padding-bottom: 2em;
+    }
+    &-wrapper{
+        margin-bottom: 4em;
+
+        @include clearfix();
+    }
+    .parnter-bottom-nav-snip{
+        text-align: center;
+    }
+    &-element{
+      a {
+        text-decoration: none;
+      }
+        &-inner-wrapper{
+            &:hover{
+                background-color: #F5F4F4;
+            }
+        }
+    }
+}
+
+.legal-section{
+    background-color: #F5F5F5;
+    height:auto;
+
+    &-inner-wrapper{
+        margin: 0 auto;
+        width: 1240px;
+        padding:10px 0;
+        h3 {
+            font-size:20px;
+            line-height:24px;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size:15px;
+            line-height:18px;
+        }
+    }
+}
+@media (max-width: 1280px){//1280px
+    .legal-section-inner-wrapper {
+        width:940px;
+    }
+}
+@media (max-width: $screen-md){//992px
+    /*.ncp-social-follow-icon-wrapper {
+        width:25%;
+    }*/
+    .legal-section-inner-wrapper {
+        width:720px;
+    }
+}
+@media (max-width: 768px){//768px
+    .legal-section-inner-wrapper {
+        width:auto;
+        padding-left:4%;
+        padding-right:4%;
+    }
+}
+@media (max-width: 500px){//500px
+    .social-share-inner-wrapper {
+        float:none;
+        margin:15px auto 0;
+        text-align:center;
+    }
+}

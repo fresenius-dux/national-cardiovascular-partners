@@ -1,0 +1,107 @@
+.type-ncp.hentry{
+    width: 100%;
+}
+.post_page_content {
+    margin-top:40px;
+}
+.type-ncp{
+    .right-column-box{
+    padding: 3em 1em;
+    .widget-content{
+            .widget-title{
+                color: #13275A;
+                font-size: 1.5em;
+                font-weight: normal;
+                margin-bottom: 1em;
+            }
+            a{
+                    background: none;
+                    color: blue;
+                    text-transform: none;
+                    text-align: left;
+                    padding: 0;
+                    margin-top: 2em;
+                    font-weight: bold;
+            }
+        }
+    }
+}
+
+.page-template-partner-landing .content-position{
+    margin-top: 11em;
+}
+.btn-ncp {
+  @extend %call-to-action;
+}
+.single-ncp {
+  .site-header.affix + .site-content{
+      padding-top: 215px;
+  }
+  .hero {
+    margin-top: 8.9em;
+  }
+  .navbar {
+    border: none;
+  }
+}
+
+.nav-bar-mobile{
+    display: none;
+}
+
+@media (max-width: $screen-md){
+    .partner-nav-bar.nav-bar-mobile{
+        display: block;
+    }
+    .partner-nav-bar{
+        display: none;
+    }
+}
+span.caret {
+    display: none;
+}
+
+ul.dropdown-menu > ul.dropdown-menu{
+
+}
+ul.dropdown-menu > ul.dropdown-menu {
+   position:relative;
+}
+.dropdown-menu>.dropdown-menu {
+   top:0;
+   left:100%;
+   margin-top:-6px;
+   margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;
+   -moz-border-radius:0 6px 6px 6px;
+   border-radius:0 6px 6px 6px;
+}
+.dropdown-menu:hover>.dropdown-menu {
+   display:block;
+}
+.dropdown-menu>a:after {
+   display:block;
+   content:" ";
+   float:right;
+   width:0;
+   height:0;
+   border-color:transparent;
+   border-style:solid;
+   border-width:5px 0 5px 5px;
+   border-left-color:#cccccc;
+   margin-top:5px;
+   margin-right:-10px;
+}
+.dropdown-menu:hover>a:after {
+   border-left-color:#ffffff;
+}
+.dropdown-menu.pull-left {
+   float:none;
+}
+.dropdown-menu.pull-left>.dropdown-menu {
+   left:-100%;
+   margin-left:10px;
+   -webkit-border-radius:6px 0 6px 6px;
+   -moz-border-radius:6px 0 6px 6px;
+   border-radius:6px 0 6px 6px;
+}

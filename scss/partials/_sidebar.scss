@@ -1,0 +1,23 @@
+.ncp-sidebar {
+    background-color: #f5f5f5;
+    padding: 50px 40px 50px 40px;
+    h3 {
+        color: #13275A;
+        font-size: 22px;
+    }
+    a {
+        color: #313945;
+    }
+    h4 {
+        a {
+            color: #0036A0;
+            font-weight: bold;
+        }
+    }
+    iframe {
+        min-height: initial;
+    }
+    iframe:not(.video-iframe) {
+        min-height: 600px;
+    }
+}

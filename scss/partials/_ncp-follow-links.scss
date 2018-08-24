@@ -1,0 +1,30 @@
+
+.ncp-social-follow {
+    border-top: 1px solid #003D99;
+    border-bottom: 1px solid #003D99;
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0 2em;
+    text-align: center;
+    h3 {
+      margin: 15px 0;
+    }
+    &-icon-wrapper{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        @include clearfix();
+    }
+    &-facebook {
+      color: #3C589A;
+      margin: 0 20px;
+    }
+    &-twitter {
+      color: #55acee;
+      margin: 0 20px;
+    }
+    &-linkedin {
+      color: #0077B5;
+      margin: 0 20px;
+    }
+}

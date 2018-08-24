@@ -1,0 +1,131 @@
+.value-prop{
+    width:100%;
+    background-color:#F5F5F5;
+    &-inner-wrapper{
+        background-color: #F5F5F5;
+        margin:0 auto;
+        .value-prop {
+          &-link {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 0 15px;
+          }
+          &-card {
+            background-color: #F5F5F5;
+            box-sizing: border-box;
+            float: left;
+            padding: 2em;
+            position: relative;
+            display: block;
+            height:auto;
+
+            &.VPBorderClass1 .HorizBorder1, &.VPBorderClass2 .HorizBorder2, &.VPBorderClass3 .HorizBorder3, &.VPBorderClass4 .HorizBorder4 {
+                border-top: 1px solid #D8D8D8;
+                width: 5em;
+                position: absolute;
+                top: 0;
+                left:0;
+                right:0;
+            }
+
+            &.VPBorderClass1 .VertBorder1, &.VPBorderClass2 .VertBorder2, &.VPBorderClass3 .VertBorder3, &.VPBorderClass4 .VertBorder4 {
+                border-right: 1px solid #D8D8D8;
+                height: 5em;
+                position: absolute;
+                top: 35%;
+                right: 0;
+            }
+
+            &.VPBorderClass4 .VertBorder4 {
+                border-right:none;
+            }
+
+            &.VPBorderClass1 .HorizBorder1, &.VPBorderClass2 .HorizBorder2, &.VPBorderClass3 .HorizBorder3, &.VPBorderClass4 .HorizBorder4 {
+                border-top:none;
+            }
+
+            &:hover, &:focus {
+                background-color: #EBEBEB;
+            }
+
+            h3, p, {
+                display: block;
+                text-align: center;
+            }
+            h3{
+                width: 100%;
+                margin: 0 auto;
+                font-weight:700;
+                font-size:24px;
+                line-height:29px;
+                color:#0E255A;
+            }
+            p{
+                padding: 25px 0;
+                margin: 0;
+                text-overflow:ellipsis;
+                color:#000;
+                font-weight: normal;
+            }
+            a{
+                font-size:18px;
+                line-height:22px;
+                font-weight:bold;
+            }
+        }
+      }
+    }
+}
+
+@media (max-width:$screen-md){// 992px
+    .value-prop {    
+        &-card {
+            &.VPBorderClass1 .HorizBorder1, &.VPBorderClass2 .HorizBorder2 {
+                border-top:none !important;
+            }
+            &.VPBorderClass3 .HorizBorder3, &.VPBorderClass4 .HorizBorder4 {
+                border-top:1px solid #D8D8D8 !important;
+            }
+            &.VPBorderClass1 .HorizBorder1, &.VPBorderClass2 .HorizBorder2, &.VPBorderClass3 .HorizBorder3, &.VPBorderClass4 .HorizBorder4 {
+                //right:38% !important;
+                right:0;
+                left:0;
+                margin:0 auto;
+                
+            }           
+            &.VPBorderClass2 .VertBorder2, &.VPBorderClass4 .VertBorder4 {
+                border-right:none !important;
+            }
+
+        }
+    }
+}
+
+@media (max-width:$screen-sm){// 768px
+    .value-prop {    
+        &-card {
+            &.VPBorderClass1 .HorizBorder1 {
+                border-top: none !important;
+            }
+            &.VPBorderClass2 .HorizBorder2 {
+                border-top: 1px solid #D8D8D8 !important;
+            }            
+            &.VPBorderClass1 .VertBorder1, &.VPBorderClass3 .VertBorder3 {
+                border-right: none !important;
+            }
+            &.VPBorderClass1 .HorizBorder1, &.VPBorderClass2 .HorizBorder2, &.VPBorderClass3 .HorizBorder3, &.VPBorderClass4 .HorizBorder4 {
+                //right:44% !important;
+                right:0;
+                left:0;
+                margin:0 auto;
+                width:90% !important;
+            }
+        }
+        .container {
+            padding-left:0;
+            padding-right:0;
+        }
+    }
+}

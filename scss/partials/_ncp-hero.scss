@@ -1,0 +1,105 @@
+#primary{
+    @include clearfix();
+}
+%hero-gradient {
+  background-image: linear-gradient(to right, rgba(30,87,153,1) 0%,rgba(62,120,180,1) 34%,rgba(125,185,232,0) 100%);
+  background-size: cover;
+  background-position: center center;
+}
+.single-ncp{
+
+    .full-width-callout{
+        height: 350px;
+        margin-bottom: 0;
+    }
+
+    .full-width-callout-html{
+        left: 12%;
+        top: 35%;
+        color: white;
+        font-size: 48px;
+        width: 40%;
+        z-index: 2;
+    }
+
+}
+
+.ncp-hero {
+  @extend %hero-gradient;
+  @media (max-width: $screen-xs){
+    background-color: rgba(30,87,153,1);
+  }
+  color: white;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  z-index: 1;
+  &.fixed-nav {
+    margin-top: 89px;
+  }
+
+  &:before{
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        @extend %hero-gradient;
+        content: ' ';
+        display: block;
+        z-index: 2;
+    }
+  .breadcrumbs {
+    a{
+      color: white;
+    }
+  }
+  .container {
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 3;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  &-headers {
+    padding: 30px 0;
+  }
+  &-logo {
+    width: 260px;
+    height: auto;
+    margin-right: 5px;
+  }
+  &-name {
+    line-height: 39px;
+  }
+  &-action {
+    text-align: center;
+    @media (min-width: $screen-md) {
+      padding-top: 130px;
+    }
+  }
+}
+
+.hero-logo-container{
+  padding: 0 13px;
+  margin: 2em 0;
+
+  .hero-partner-logo{
+      max-width: 40px;
+      vertical-align: baseline;
+  }
+  .hero-partner-name{
+      color: white;
+      font-weight: bold;
+      vertical-align: super;
+  }
+}
+
+@media (max-width: 440px){
+  .ncp-hero h1 {
+    font-size:30px;
+    line-height:35px;
+  }
+}

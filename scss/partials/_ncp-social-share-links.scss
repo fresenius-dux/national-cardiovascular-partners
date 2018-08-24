@@ -1,0 +1,36 @@
+
+/*
+ * Style the social sharing icons
+ * These icons are output by the plugin
+ * Sassy Social Share
+ * https://wordpress.org/plugins/sassy-social-share/
+ */
+
+.heateor_sss_sharing_container {
+  display: inline-block;
+  @include clearfix();
+}
+.heateorSssSharing {
+  border-radius: 3px;
+}
+.heateorSssPrintBackground, .heateorSssEmailBackground {
+  background-color: #003d99 !important;
+}
+.heateorSssSharingRound:last-of-type {
+
+}
+
+.social-share {
+  &-inner-wrapper {
+    float: right;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  &-text{
+    display: inline-block;
+    position: relative;
+    top: -5px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}

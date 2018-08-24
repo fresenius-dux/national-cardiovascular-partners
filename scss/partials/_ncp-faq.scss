@@ -1,0 +1,14 @@
+.ncp-homepage-faqs {
+  h3 {
+    margin: 1.5em 0 .4em;
+    text-transform: uppercase;
+    font-size:30px;
+  }
+  &-divider {
+    border: none;
+    background-color: #003D99;
+    width: 200px;
+    height: 2px;
+    margin: 20px auto;
+  }
+}

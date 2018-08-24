@@ -1,0 +1,90 @@
+blockquote.quoteCont {
+  padding: 18px 20px 0;
+  margin: 0;
+  quotes: "\201C""\201D""\2018""\2019";
+  // position: static;
+  left: 0;
+  p {
+    color:#13275A;
+    font-style: italic;
+    font-size: 20px;
+    display: inline;
+    padding: 0.2em;
+  }
+  &:before, &:after {
+    color: #ccc;
+    font-family: inherit;
+    font-size: 100px;
+    position: relative;
+    display: block;
+    z-index: -1;
+  }
+  &:before {
+    content: open-quote;
+    text-align: left;
+    margin-bottom: -27px;
+    left: -35px;
+  }
+  &:after {
+    content: close-quote;
+    text-align: right;
+    right: -5px;
+    top: 0;
+    line-height: 10px;
+  }
+
+}
+
+.ArticleContentContainer {
+  padding-top: 30px;
+  .headshot {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  @media (min-width: $screen-md) {
+    .col-md-3.col-sm-12 {
+      border-left: 1px solid #003D99;
+      margin-left: -1px;
+    }
+    .col-md-9.col-sm-12 {
+      border-right: 1px solid #003D99;
+    }
+  }
+
+  .adcs-col0 {
+      padding-right:15px;
+      h2 {
+          text-transform: uppercase;
+          font-size:30px;
+          line-height:36px;
+      }
+      p {
+          font-size:18px;
+          line-height:24px;
+      }
+  }
+  .adcs-col1 {
+      text-align: center;
+      // border-left: 1px solid #003D99;
+      margin-left: -1px;
+  }
+}
+@media (max-width: $screen-md) {
+  .ArticleContentContainer {
+    .adcs-col0 {
+      border-right: 0;
+    }
+    .adcs-col1 {
+      border-left: 0;
+      max-width: 500px;
+      float: none;
+      overflow: hidden;
+      margin: 0 auto;
+    }
+  }
+}

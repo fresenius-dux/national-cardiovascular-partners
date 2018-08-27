@@ -95,6 +95,12 @@ register_nav_menus( array(
 ) );
 
 
+add_action( 'after_setup_theme','remove_cptui_register_my_cpts', 100 );
+
+function remove_cptui_register_my_cpts() {
+    remove_action( 'init', 'cptui_register_my_cpts');
+}
+
 /**
  *  Register Custom Navigation Walker
  *

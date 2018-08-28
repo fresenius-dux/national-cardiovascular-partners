@@ -54,19 +54,20 @@ function partner_widgets_init() {
 add_action( 'widgets_init', 'partner_widgets_init' );
 
 
-
 if ( ! function_exists( 'child_setup' ) ) {
 
   function child_setup() {
-
+		// child theme menu location
     register_nav_menus( array(
       'partner-menu' => 'Partner Menu',
     ) );
+		// unregister parent theme menu locations
+		unregister_nav_menu('nano');
+		unregister_nav_menu('primary');
   }
 }
 
-add_action( 'after_setup_theme', 'child_setup' );
-
+add_action( 'after_setup_theme', 'child_setup', 11 );
 
 add_filter( 'wp_nav_menu_objects', 'network_primary_nav', 100, 2 );
 function network_primary_nav( $menu_items, $args )

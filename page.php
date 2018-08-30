@@ -1,4 +1,7 @@
 <?php
+/*!
+ * @package fmcna-com-child
+ */
 get_header(); ?>
 
 <?php

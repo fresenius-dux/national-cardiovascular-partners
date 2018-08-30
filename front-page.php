@@ -1,4 +1,9 @@
-<?php get_header(); ?>
+<?php
+/*
+ * @package fmcna-com-child
+ */
+
+get_header(); ?>
 
 <?php
   set_query_var('partner_nav', 'partner-menu');

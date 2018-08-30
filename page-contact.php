@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: NCP Contact Page
+ * Template Name: Partner Contact Page
+ * @package fmcna-com-child
  *
  */
-
 
 get_header();
 

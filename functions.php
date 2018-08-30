@@ -1,4 +1,8 @@
 <?php
+/*!
+ *
+ * @package fmcna-com-child
+ */
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(

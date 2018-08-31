@@ -74,6 +74,18 @@ if ( ! function_exists( 'child_setup' ) ) {
 
 add_action( 'after_setup_theme', 'child_setup', 11 );
 
+// load the custom field groups for pages in the parent theme only
+add_filter('acf/settings/load_json', 'parent_theme_field_groups');
+
+function parent_theme_field_groups($paths) {
+
+  $path = get_template_directory() . '/acf-json';
+
+  $paths[] = $path;
+
+  return $paths;
+
+}
 
 
 

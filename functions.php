@@ -68,10 +68,39 @@ if ( ! function_exists( 'child_setup' ) ) {
 		// unregister parent theme menu locations
 		unregister_nav_menu('nano');
 		unregister_nav_menu('primary');
+		add_filter( 'theme_page_templates', 'child_theme_remove_page_template' );
   }
 }
 
 add_action( 'after_setup_theme', 'child_setup', 11 );
+
+
+
+
+
+/**
+* Remove page templates inherited from the parent theme.
+*
+* @param array $page_templates List of currently active page templates.
+*
+* @return array Modified list of page templates.
+*/
+function child_theme_remove_page_template( $page_templates ) {
+	// Remove the template we don’t need.
+	unset( $page_templates['faces-homepage.php'] );
+	unset( $page_templates['page-liberty.php'] );
+	unset( $page_templates['page-procurement.php'] );
+	unset( $page_templates['page-donation.php'] );
+	unset( $page_templates['page-sidebar.php'] );
+
+	return $page_templates;
+}
+
+
+
+
+
+
 
 add_filter( 'wp_nav_menu_objects', 'network_primary_nav', 100, 2 );
 function network_primary_nav( $menu_items, $args )

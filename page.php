@@ -2,12 +2,8 @@
 /*!
  * @package fmcna-com-child
  */
-get_header(); ?>
-
-<?php
-  // set_query_var('partner_nav', 'partner-menu');
-	// set_query_var('partner_name', 'National Cardiovascular Partners');
-  get_template_part('template-parts/partner', 'subnav');
+get_header();
+get_template_part('template-parts/partner', 'subnav');
 ?>
 
 </header><!-- #masthead -->
@@ -22,7 +18,10 @@ get_header(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<?php get_template_part('template-parts/partner', 'content'); ?>
-						<?php get_template_part('template-parts/content-sections/tabs'); ?>
+						<?php
+            // this fetches from the parent theme
+            get_template_part('template-parts/content-sections/tabs');
+            ?>
 
 						<footer class="entry-footer">
 							<?php
@@ -42,7 +41,8 @@ get_header(); ?>
 
 
 					<?php if (get_field('show_bottom_nav_value_props')) :
-						get_template_part('template-parts/partner','bottom_nav'); endif; ?>
+						get_template_part('template-parts/partner','bottom_nav');
+          endif; ?>
 					<?php get_template_part('template-parts/partner','follow-links'); ?>
 					<?php get_template_part('template-parts/partner','social-share-links'); ?>
     			<?php endwhile; // End of the loop. ?>

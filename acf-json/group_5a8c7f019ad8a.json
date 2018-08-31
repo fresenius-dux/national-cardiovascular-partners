@@ -1,6 +1,6 @@
 {
     "key": "group_5a8c7f019ad8a",
-    "title": "NCP Contact Page",
+    "title": "Partner Contact Page",
     "fields": [
         {
             "key": "field_5a8c8abe522bf",
@@ -246,7 +246,7 @@
             {
                 "param": "post_template",
                 "operator": "==",
-                "value": "single-ncp-contact.php"
+                "value": "page-contact.php"
             }
         ]
     ],
@@ -258,5 +258,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520880030
+    "modified": 1535657349
 }

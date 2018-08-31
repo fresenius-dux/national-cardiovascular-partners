@@ -12,7 +12,7 @@
   <div class="menu-ncp-subnav-container">
     <ul class="nav nav-pills nav-justified">
       <li class="menu-item">
-        <a id="ncp-menu" href>name here</a>
+        <a id="ncp-menu" href><?= bloginfo('name') ?></a>
       </li>
     </ul>
   </div>

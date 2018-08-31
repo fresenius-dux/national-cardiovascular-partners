@@ -1,6 +1,6 @@
 <?php
   // the logo is in a global field
-  $ncp_fields = get_field('ncp_fields', 'option');
+  $partner_fields = get_field('partner_fields', 'option');
 
   // set up the hero, and associated fields
   $hero = get_field('hero');
@@ -24,10 +24,10 @@
             <p class="breadcrumbs"><?php bcn_display(); ?></p>
             <div class="ncp-hero-headers">
               <?php
-              if ( !empty($ncp_fields) ) : ?>
+              if ( !empty($partner_fields) ) : ?>
               <img class="ncp-hero-logo"
-                src="<?= $ncp_fields['ncp_logo']['url'] ?>"
-                alt="<?= $ncp_fields['ncp_logo']['alt'] ?>">
+                src="<?= $partner_fields['partner_logo']['url'] ?>"
+                alt="<?= $partner_fields['partner_logo']['alt'] ?>">
               <?php endif ?>
               <?php if (!empty($h1)) { echo '<h1>' . $h1 . '</h1>'; } ?>
             </div>

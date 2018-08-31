@@ -20,11 +20,10 @@ get_header(); ?>
 
 <div id="content" class="site-content" >
     <div id="primary" class="content-area">
-        <?php get_template_part('template-parts/ncp/partner','value-props'); ?>
+        <?php get_template_part('template-parts/partner','value-props'); ?>
         <div class="container">
           <?php get_template_part('template-parts/partner','article_detail_content'); ?>
           <?php get_template_part('template-parts/partner','home_modal_banner'); ?>
-          <?php //get_template_part('template-parts/partner','home_faqs'); ?>
           <?php get_template_part('template-parts/partner','home_contact_form_banner'); ?>
           <?php get_template_part('template-parts/partner','bottom_nav'); ?>
           <?php get_template_part('template-parts/partner','follow-links'); ?>

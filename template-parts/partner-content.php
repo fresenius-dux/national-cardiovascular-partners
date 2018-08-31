@@ -5,7 +5,6 @@
 	?>
 	<div class="entry-meta sr-only">
 		<p class="entry-title"><?php the_title(); ?></p>
-		<p class="author">National Cardiovascular Partners</p>
 		<p class="published"><?php the_date(); ?></p>
 		<p class="updated"><?php the_modified_date(); ?></p>
 	</div>

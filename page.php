@@ -21,10 +21,8 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
 					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<?php get_template_part('template-parts/ncp/partner', 'content'); ?>
+						<?php get_template_part('template-parts/partner', 'content'); ?>
 						<?php get_template_part('template-parts/content-sections/tabs'); ?>
-						<?php //get_template_part('template-parts/ncp/partner', 'single_threecol_bottom_content'); ?>
-    				<?php //get_template_part('template-parts/ncp/partner', 'single_bottom_callout'); ?>
 
 						<footer class="entry-footer">
 							<?php

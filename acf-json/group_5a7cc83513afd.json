@@ -1,6 +1,6 @@
 {
     "key": "group_5a7cc83513afd",
-    "title": "NCP subpages",
+    "title": "Partner subpages",
     "fields": [
         {
             "key": "field_5a885fa4474cd",
@@ -80,9 +80,9 @@
                 "value": "page"
             },
             {
-                "param": "post",
+                "param": "page_type",
                 "operator": "!=",
-                "value": "4111"
+                "value": "front_page"
             }
         ]
     ],
@@ -94,5 +94,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520969756
+    "modified": 1535657335
 }

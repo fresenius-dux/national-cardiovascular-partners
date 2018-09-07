@@ -1,4 +1,8 @@
 <?php
+/*!
+ *
+ * @package fmcna-com-child
+ */
 
 require 'plugin-update-checker/plugin-update-checker.php';
 $myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
@@ -54,18 +58,60 @@ function partner_widgets_init() {
 add_action( 'widgets_init', 'partner_widgets_init' );
 
 
-
 if ( ! function_exists( 'child_setup' ) ) {
 
   function child_setup() {
-
+		// child theme menu location
     register_nav_menus( array(
       'partner-menu' => 'Partner Menu',
     ) );
+		// unregister parent theme menu locations
+		unregister_nav_menu('nano');
+		unregister_nav_menu('primary');
+		add_filter( 'theme_page_templates', 'child_theme_remove_page_template' );
   }
 }
 
-add_action( 'after_setup_theme', 'child_setup' );
+add_action( 'after_setup_theme', 'child_setup', 11 );
+
+// load the custom field groups for pages in the parent theme only
+add_filter('acf/settings/load_json', 'parent_theme_field_groups');
+
+function parent_theme_field_groups($paths) {
+
+  $path = get_template_directory() . '/acf-json';
+
+  $paths[] = $path;
+
+  return $paths;
+
+}
+
+
+
+
+/**
+* Remove page templates inherited from the parent theme.
+*
+* @param array $page_templates List of currently active page templates.
+*
+* @return array Modified list of page templates.
+*/
+function child_theme_remove_page_template( $page_templates ) {
+	// Remove the template we don’t need.
+	unset( $page_templates['faces-homepage.php'] );
+	unset( $page_templates['page-liberty.php'] );
+	unset( $page_templates['page-procurement.php'] );
+	unset( $page_templates['page-donation.php'] );
+	unset( $page_templates['page-sidebar.php'] );
+
+	return $page_templates;
+}
+
+
+
+
+
 
 
 add_filter( 'wp_nav_menu_objects', 'network_primary_nav', 100, 2 );

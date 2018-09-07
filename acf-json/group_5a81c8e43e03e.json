@@ -1,6 +1,6 @@
 {
     "key": "group_5a81c8e43e03e",
-    "title": "NCP homepage",
+    "title": "Partner homepage",
     "fields": [
         {
             "key": "field_5a81de804249a",
@@ -1388,9 +1388,14 @@
     "location": [
         [
             {
-                "param": "post",
+                "param": "post_type",
                 "operator": "==",
-                "value": "4111"
+                "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
             }
         ]
     ],
@@ -1402,5 +1407,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1532103169
+    "modified": 1535657378
 }

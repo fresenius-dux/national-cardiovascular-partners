@@ -3,10 +3,9 @@
  * Theme Name: FMCNA Child
  * Template: fmcna-com-parent
  * Author: Peter Mumford 3235181
- * Download_url: https://github.com/fresenius-dux/fmcna-com-child/archive/master.zip
- * Text Domain:  fmcna-com-parent
- * Version: 0.2
-*/
+ * Text Domain:  fmcna-com-child
+ * Version: 0.7
+ */
 .btn-ncp {
   background-image: linear-gradient(#249dff 0%, #0075d4 100%);
   color: white;
@@ -244,7 +243,6 @@
 
 .ncp-hero {
   color: white;
-  height: 100%;
   overflow: hidden;
   position: relative;
   color: white;

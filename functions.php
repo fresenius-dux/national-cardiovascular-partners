@@ -1,15 +1,8 @@
 <?php
 /*!
  *
- * @package fmcna-com-child
+ * @package national-cardiovascular-partners
  */
-
-require 'plugin-update-checker/plugin-update-checker.php';
-$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
-	'https://github.com/fresenius-dux/fmcna-com-child',
-	__FILE__,
-	'fmcna-com-child'
-);
 
 function child_styles() {
 	$parent_style = 'fmcna-style';
